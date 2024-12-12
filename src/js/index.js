@@ -4,6 +4,11 @@ let secondSlideContainer = document.getElementsByClassName(
   "slide--content--one"
 )[0];
 
+const button = document.getElementById("button");
+  setTimeout(() => {
+    button.style.display = "";
+  }, 11000);
+
 let secondCanvas = document.getElementsByClassName("second--canvas")[0];
 
 secondSlideContainer.setAttribute("style", "display:none");
