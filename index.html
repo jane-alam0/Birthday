@@ -5,6 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/index.css" />
+    <style>
+       .btn {
+        animation: scaling 2s infinite;
+      }
+      @keyframes scaling {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="first--slide">
@@ -1997,11 +2013,27 @@
       <img src="src/images/gift.png" alt="" id="gf2" />
       <img src="src/images/gift.png" alt="" id="gf3" />
     </div>
-    <div style="position: absolute; bottom: 10px; left: 40%">
-      <a href="https://jane-alam0.github.io/Arif_Birthday/"
-        ><p style="text-align: center; font-size: 25px">next wish</p></a
+    
+     
+      <a
+        class="btn"
+        style="
+          display: none;
+          position: absolute;
+          bottom: 20px;
+          left: 43%;
+          font-size: 30px;
+          text-decoration: none;
+          color: rgb(214, 214, 64);
+          border: white solid 2px;
+          border-radius: 10px;
+          padding: 5px;
+        "
+        id="button"
+        href="https://jane-alam0.github.io/Birthday/"
+        >NEXT Wish</a
       >
-    </div>
+   
 
     <script src="src/js/index.js"></script>
   </body>
